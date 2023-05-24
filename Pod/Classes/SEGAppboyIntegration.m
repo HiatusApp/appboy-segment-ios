@@ -64,6 +64,8 @@
       mergedAppboyOptions[ABKEndpointKey] = customEndpoint;
     }
     
+      mergedAppboyOptions[ABKEnableSDKAuthenticationKey] = @YES;
+      
     if ([NSThread isMainThread]) {
       [Appboy startWithApiKey:appboyAPIKey
                 inApplication:[UIApplication sharedApplication]
